@@ -4,6 +4,12 @@
 
 
 ## 실행하기 
+
+* MainActivity.kt 에서 해당값 24시간마다 갱신 
+```c
+RiotAPI.setApiKey("RGAPI-...")
+```
+
 * settings.gradle 
 ```c
 dependencyResolutionManagement{
