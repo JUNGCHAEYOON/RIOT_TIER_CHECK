@@ -4,13 +4,20 @@
 
 
 ## 실행하기 
-* settings.gradle -> dependencyResolutionManagement -> repositories 
+* settings.gradle 
 ```c
-maven { url 'https://jitpack.io' } 
+dependencyResolutionManagement{
+  repositories {
+    ...
+    maven { url 'https://jitpack.io' } 
+  }
+}
 ```
-* build.gradle -> dependencies  
+* build.gradle 
 ```c
-implementation("com.github.kimcore:riot.kt:1.0") 
+dependencies {
+  implementation("com.github.kimcore:riot.kt:1.0") 
+}
 ```
 * AndroidManifest  
 ```c
